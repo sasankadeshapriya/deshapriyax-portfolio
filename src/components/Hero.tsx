@@ -16,7 +16,7 @@ const Hero: React.FC = () => {
               Creating elegant, efficient, and user-focused web applications with modern technologies.
             </p>
             <div className="flex flex-wrap justify-center md:justify-start gap-4">
-              <Button href="/deshapriya-portfolio/cv.pdf" download>
+              <Button href="/cv.pdf" download>
                 View CV
               </Button>
               <Button 
@@ -38,7 +38,7 @@ const Hero: React.FC = () => {
           <div className="w-full md:w-1/2 flex justify-center md:justify-end">
             <div className="rounded-full overflow-hidden w-60 h-60 md:w-80 md:h-80 border-4 border-black shadow-lg">
               <img 
-                src="/deshapriya-portfolio/avatar.png" 
+                src="/avatar.png" 
                 alt="Dimuthu Sasanka Deshapriya" 
                 className="w-full h-full object-cover"
               />
