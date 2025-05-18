@@ -10,7 +10,7 @@ const Skills: React.FC = () => {
   const skillCategories: SkillCategory[] = [
     {
       name: 'Front-end',
-      skills: ['React.js', 'Vue.js', 'Tailwind CSS', 'Bootstrap', 'HTML5', 'CSS3']
+      skills: ['React.js','Tailwind CSS', 'Bootstrap', 'HTML5', 'CSS3']
     },
     {
       name: 'Back-end',
