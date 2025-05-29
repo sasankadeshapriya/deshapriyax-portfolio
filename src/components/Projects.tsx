@@ -9,18 +9,11 @@ interface Project {
   imageUrl: string;
   github?: string;
   website?: string;
+  video?: string;          
 }
 
 const Projects: React.FC = () => {
   const projects: Project[] = [
-    {
-      title: 'Micro Job Site',
-      period: 'April 2025 – Present',
-      technologies: ['Laravel', 'PHP', 'React.js', 'MySQL', 'Stripe/PayPal API'],
-      description: 'Developing an online platform for users to post and complete microservices like data entry and content writing, with integrated payment gateways and an admin dashboard for management.',
-      imageUrl: '/1.png',
-      github: 'https://github.com/sasankadeshapriya/minimoola-micro-jobs-webapp'
-    },
     {
       title: 'Forex Institute Course Platform',
       period: '2025',
@@ -36,7 +29,8 @@ const Projects: React.FC = () => {
       technologies: ['Flutter/Dart', 'Laravel', 'Bootstrap', 'Node.js', 'Express.js'],
       description: 'Developed a system with three components: a mobile app for delivery boys to track stores, generate bills, and manage stock; a Laravel web dashboard for admins to assign products, manage orders, and track stock; and a Node.js API for data exchange.',
       imageUrl: '/3.png',
-      github: 'https://github.com/sasankadeshapriya?tab=repositories&q=order-processing&type=&language=&sort='
+      github: 'https://github.com/sasankadeshapriya?tab=repositories&q=order-processing&type=&language=&sort=',
+      video: 'https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7221528048989343745?compact=1'
     },
     {
       title: 'Management Information System',
@@ -44,7 +38,16 @@ const Projects: React.FC = () => {
       technologies: ['Java Swing', 'MySQL'],
       description: 'Developed a University Management Information System using Java Swing and MySQL to manage student, course, and faculty data.',
       imageUrl: '/4.png',
-      github: 'https://github.com/sasankadeshapriya/tecmis'
+      github: 'https://github.com/sasankadeshapriya/tecmis',
+      video: 'https://youtu.be/Gtv_FFkblIQ'
+    },
+    {
+      title: 'Micro Job Site',
+      period: 'May 2025 – Present',
+      technologies: ['Laravel', 'PHP', 'React.js', 'MySQL', 'Stripe/PayPal API'],
+      description: 'Developing an online platform for users to post and complete microservices like data entry and content writing, with integrated payment gateways and an admin dashboard for management.',
+      imageUrl: '/1.png',
+      github: 'https://github.com/sasankadeshapriya/minimoola-micro-jobs-webapp'
     },
     {
       title: 'PrimeHome.lk',
@@ -56,7 +59,7 @@ const Projects: React.FC = () => {
     },
     {
       title: 'Doctor Appointment Management System',
-      period: '2022',
+      period: '2025',
       technologies: ['React.js', 'Node.js', 'Express.js', 'MySQL'],
       description: 'Developed a system using React.js, Node.js, and MySQL for managing doctor appointments and patient data.',
       imageUrl: '/6.png',
@@ -64,7 +67,7 @@ const Projects: React.FC = () => {
     },
     {
       title: 'TechItem.lk',
-      period: '2022',
+      period: '2024',
       technologies: ['WordPress', 'WooCommerce'],
       description: 'Set up a WordPress WooCommerce store, customized the theme, and fixed bugs for improved functionality.',
       imageUrl: '/7.png',
@@ -84,7 +87,7 @@ const Projects: React.FC = () => {
           {projects.map((project, index) => (
             <div 
               key={index} 
-              className="bg-white rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow overflow-hidden"
+              className="bg-white rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow overflow-hidden flex flex-col"
             >
               <div className="h-48 overflow-hidden">
                 <img 
@@ -93,7 +96,7 @@ const Projects: React.FC = () => {
                   className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500 ease-in-out"
                 />
               </div>
-              <div className="p-6">
+              <div className="p-6 flex flex-col flex-grow">
                 <div className="flex justify-between items-start mb-2">
                   <h3 className="text-xl font-bold">{project.title}</h3>
                   <span className="text-sm text-gray-600">{project.period}</span>
@@ -110,9 +113,9 @@ const Projects: React.FC = () => {
                   ))}
                 </div>
                 
-                <p className="text-gray-700 mb-4 text-sm">{project.description}</p>
+                <p className="text-gray-700 mb-4 text-sm flex-grow">{project.description}</p>
                 
-                <div className="flex gap-4 mt-auto">
+                <div className="flex gap-4 mt-auto flex-wrap">
                   {project.github && (
                     <a 
                       href={project.github} 
@@ -131,6 +134,16 @@ const Projects: React.FC = () => {
                       className="text-sm font-medium text-blue-600 hover:text-blue-800 hover:underline transition-colors"
                     >
                       Website
+                    </a>
+                  )}
+                  {project.video && (
+                    <a 
+                      href={project.video} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-sm font-medium text-blue-600 hover:text-blue-800 hover:underline transition-colors"
+                    >
+                      Video
                     </a>
                   )}
                 </div>

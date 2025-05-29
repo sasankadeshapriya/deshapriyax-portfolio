@@ -10,7 +10,7 @@ const Skills: React.FC = () => {
   const skillCategories: SkillCategory[] = [
     {
       name: 'Front-end',
-      skills: ['React.js','Tailwind CSS', 'Bootstrap', 'HTML5', 'CSS3']
+      skills: ['React.js', 'Bootstrap', 'HTML5', 'CSS3']
     },
     {
       name: 'Back-end',
@@ -18,11 +18,11 @@ const Skills: React.FC = () => {
     },
     {
       name: 'Languages',
-      skills: ['JavaScript (ES6+)', 'TypeScript', 'PHP', 'Java', 'C']
+      skills: ['JavaScript (ES6+)', 'PHP', 'Java']
     },
     {
       name: 'Databases',
-      skills: ['MySQL', 'MS SQL', 'Sequelize ORM', 'MongoDB']
+      skills: ['MySQL', 'MS SQL', 'Sequelize ORM']
     },
     {
       name: 'Version Control',

@@ -26,7 +26,7 @@ const About: React.FC = () => {
                 <span className="text-sm text-gray-600">Current</span>
               </div>
               <p className="text-gray-700">B.Sc. in Information and Communication Technology</p>
-              <p className="text-gray-600">CGPA: 3.59/4.00</p>
+              <p className="text-gray-600">CGPA: 3.52/4.00</p>
             </div>
           </div>
         </div>
