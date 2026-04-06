@@ -1,4 +1,4 @@
-import React from 'react';
+
 
 const Tutorial = () => {
   return (
@@ -26,24 +26,7 @@ const Tutorial = () => {
           </a>
         </div>
 
-        <div className="w-full md:w-[360px] bg-white rounded shadow-lg overflow-hidden">
-          <a
-            href="https://medium.com/@deshapriyad.sasanka/understanding-bitcoin-mining-how-it-works-rewards-and-importance-for-cryptocurrency-security-584faf21fae7"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src="https://media.licdn.com/dms/image/sync/v2/D4E27AQHhTsaFaG7_ug/articleshare-shrink_800/articleshare-shrink_800/0/1721743061019?e=1749139200&v=beta&t=OdN_PpGBitiEUWwMvIhPwgf9esRIghBiLDCJxCCy-EM"
-              alt="Bitcoin Mining"
-              className="w-full h-48 object-cover"
-            />
-            <div className="p-4">
-              <h3 className="text-lg font-semibold hover:underline text-blue-600">
-                Understanding Bitcoin Mining: How it Works, Rewards, and Importance for Cryptocurrency Security
-              </h3>
-            </div>
-          </a>
-        </div>
+
 
         <div className="w-full md:w-[360px]">
           <iframe

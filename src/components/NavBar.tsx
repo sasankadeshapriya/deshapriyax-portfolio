@@ -31,10 +31,9 @@ const NavBar: React.FC = () => {
   ];
 
   return (
-    <nav 
-      className={`fixed w-full z-50 transition-all duration-300 ${
-        scrolled ? 'bg-white bg-opacity-95 shadow-md py-2' : 'bg-transparent py-4'
-      }`}
+    <nav
+      className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white bg-opacity-95 shadow-md py-2' : 'bg-transparent py-4'
+        }`}
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
@@ -43,7 +42,7 @@ const NavBar: React.FC = () => {
               DIMUTHU.
             </a>
           </div>
-          
+
           {/* Desktop menu */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-6">
@@ -65,7 +64,7 @@ const NavBar: React.FC = () => {
               ))}
             </div>
           </div>
-          
+
           {/* Mobile menu button */}
           <div className="md:hidden">
             <button

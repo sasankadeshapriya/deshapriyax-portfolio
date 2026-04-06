@@ -11,17 +11,17 @@ const Hero: React.FC = () => {
               Dimuthu Sasanka Deshapriya
             </h1>
             <div className="w-20 h-1 bg-black mb-6 mx-auto md:mx-0"></div>
-            <h2 className="text-2xl md:text-3xl font-medium mb-8">Full-Stack Developer</h2>
+            <h2 className="text-2xl md:text-3xl font-medium mb-8">Software Engineer</h2>
             {/* Hidden on mobile and displayed on larger screens */}
             <p className="text-gray-700 mb-10 max-w-xl mx-auto md:mx-0 hidden md:block">
-              Creating elegant, efficient, and user-focused web applications with modern technologies.
+              Motivated software engineer with industry experience in Laravel and PHP development.
             </p>
             <div className="flex flex-wrap justify-center md:justify-start gap-4">
-              <Button href="/cv.pdf" download>
+              <Button href="/dimuthu_deshapriya_cv.pdf" download>
                 View CV
               </Button>
-              <Button 
-                variant="secondary" 
+              <Button
+                variant="secondary"
                 href="#contact"
                 onClick={(e) => {
                   e.preventDefault();
@@ -35,12 +35,12 @@ const Hero: React.FC = () => {
               </Button>
             </div>
           </div>
-          
+
           <div className="w-full md:w-1/2 flex justify-center md:justify-end mb-6 md:mb-0">
             <div className="rounded-full overflow-hidden w-60 h-60 md:w-80 md:h-80 border-4 border-black shadow-lg">
-              <img 
-                src="/avatar.png" 
-                alt="Dimuthu Sasanka Deshapriya" 
+              <img
+                src="/avatar.png"
+                alt="Dimuthu Sasanka Deshapriya"
                 className="w-full h-full object-cover"
               />
             </div>

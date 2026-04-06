@@ -1,6 +1,6 @@
 import React from 'react';
 import SectionHeading from './SectionHeading';
-import { Mail, Phone, MapPin, Github, Linkedin, Globe } from 'lucide-react';
+import { Mail, Phone, Github, Linkedin, Globe } from 'lucide-react';
 
 interface ContactInfo {
   icon: React.ReactNode;
@@ -22,11 +22,6 @@ const Contact: React.FC = () => {
       label: 'Phone',
       value: '+94 76 175 1414',
       link: 'tel:+94761751414'
-    },
-    {
-      icon: <MapPin size={20} />,
-      label: 'Location',
-      value: '14/2 Balagolla, Maeliya, Kurunegala'
     },
     {
       icon: <Github size={20} />,
@@ -51,19 +46,19 @@ const Contact: React.FC = () => {
   return (
     <section id="contact" className="py-20 bg-gray-50">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeading 
-          title="Contact Me" 
+        <SectionHeading
+          title="Contact Me"
           subtitle="Get in touch for collaborations, opportunities, or just to say hello"
         />
-        
+
         <div className="flex flex-col md:flex-row gap-12">
           <div className="md:w-1/2">
             <h3 className="text-xl font-bold mb-6">Let's Connect</h3>
             <p className="text-gray-700 mb-8">
-              I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. 
+              I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
               Feel free to reach out through any of the following contact methods.
             </p>
-            
+
             <div className="space-y-6">
               {contactInfo.map((info, index) => (
                 <div key={index} className="flex items-start">
@@ -73,8 +68,8 @@ const Contact: React.FC = () => {
                   <div>
                     <h4 className="font-medium">{info.label}</h4>
                     {info.link ? (
-                      <a 
-                        href={info.link} 
+                      <a
+                        href={info.link}
                         target={info.link.startsWith('http') ? '_blank' : undefined}
                         rel={info.link.startsWith('http') ? 'noopener noreferrer' : undefined}
                         className="text-gray-700 hover:underline"
@@ -89,7 +84,7 @@ const Contact: React.FC = () => {
               ))}
             </div>
           </div>
-          
+
           <div className="md:w-1/2">
             <div className="bg-white p-8 rounded-lg shadow-sm">
               <h3 className="text-xl font-bold mb-6">Send a Message</h3>
@@ -106,7 +101,7 @@ const Contact: React.FC = () => {
                     required
                   />
                 </div>
-                
+
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
                     Your Email
@@ -119,7 +114,7 @@ const Contact: React.FC = () => {
                     required
                   />
                 </div>
-                
+
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
                     Message
@@ -132,7 +127,7 @@ const Contact: React.FC = () => {
                     required
                   ></textarea>
                 </div>
-                
+
                 <button
                   type="submit"
                   className="w-full bg-black text-white py-2 px-4 rounded-md hover:bg-gray-800 transition-colors focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2"
